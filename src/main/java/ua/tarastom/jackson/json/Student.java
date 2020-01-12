@@ -1,5 +1,8 @@
 package ua.tarastom.jackson.json;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Student {
     private int id;
     private String firstName;
